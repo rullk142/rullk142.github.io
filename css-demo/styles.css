@@ -1,11 +1,11 @@
 body {
-    background-color: yellow;
+    background-color: pink;
 }     
 p {
     color: tan;
     font-size: 60px;
     font-weight: bolder;
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
     width: 200px;
     margin: 100px;
     padding: 40px;
@@ -14,9 +14,9 @@ p {
 
 .special {
     color: pink;
-     background-color: blue;
+    background-color: tan;
 }
 
 #first {
-    color: orange;
+    color: tan;
 }
