@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffd7;
+}     
+h1 {
+    color: black;
+    font-size: 54px;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 25px;
+}
+img {
+    margin: 25px;
+    margin-top: -30px;
+    padding: 20px;
+    background-color: orange;
+}
+h2 {
+    color: black;
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+p {
+    color: lightblue;
+    font-size: 26px;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+a {
+    color: pink;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 25px;
+    
+}
