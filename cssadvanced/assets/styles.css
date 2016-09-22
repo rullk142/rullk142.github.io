@@ -1,0 +1,51 @@
+body {
+    width: 400px;
+    background-color: pink;
+    color: white;
+    font-size: 20px;
+    font-family: helvetica;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    font-size: 25px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: orange;
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    z-index: 500;
+}
+.circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: yellow;
+    position: fixed;
+    bottom: 0px;
+    right:40px;
+}
+.circle3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 30px;
+    margin: 40px;
+}
