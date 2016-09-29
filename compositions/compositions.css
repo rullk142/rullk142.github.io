@@ -1,0 +1,56 @@
+body {
+    width: 400px;
+    background-color: ivory;
+    color: tan;
+    font-size: 100px;
+    font-family: futura;
+    position: fixed;
+    bottom: 20px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: pink;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 500;
+}
+.circle2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: tan;
+    position: fixed;
+    bottom: 0px;
+    right: 70px;
+}
+.circle3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+    border-radius: 50% solid black;
+}
+.square {
+    width: 50px;
+    height: 10px;
+    background-color: orange;
+    position: fixed;
+    left: 100px;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 30px;
+    margin: 40px;
+}
