@@ -5,13 +5,103 @@ body {
     font-size: 20px;
     font-family: helvetica;
 }
+
+.overflow {
+    margin-bottom: 400px;
+    background-color: yellow;
+    color: black;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.mycircle {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    border-radius: 100%;
+}
+
+}
+.box: hover {
+    z-index: 100;
+}
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.box2 {
+    top: 30px;
+    right: 30px;
+    background-color: orange;
+}
+
+.box3 {
+    top: 40px;
+    right: 40px;
+    background-color: red;
+}
+
+.box4 {
+    top: 50px;
+    right: 50px;
+    background-color: white;
+}
+
+.container {
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.child {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
 a {
     color: black;
     text-decoration: none;
 }
+
 a:hover {
     color: red;
     font-size: 25px;
+}
+
+.button {
+    display:block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    background-image: url(sprite.png);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.button:hover {
+    background-position: -200px 0;
+}
+.button:active {
+    background-position: -400px 0;
 }
 .circle {
     width: 100px;
@@ -22,6 +112,9 @@ a:hover {
     bottom: 20px;
     right:20px;
     z-index: 500;
+}
+.circle:hover {
+    background-color: blue; 
 }
 .circle2 {
     width: 100px;

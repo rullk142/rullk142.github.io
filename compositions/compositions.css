@@ -1,56 +1,67 @@
 body {
     width: 400px;
     background-color: ivory;
-    color: tan;
-    font-size: 100px;
-    font-family: futura;
-    position: fixed;
-    bottom: 20px;
 }
 a {
-    color: black;
+    color: tan;
+    background-color: ivory;
     text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    font-family: futura;
+    font-size: 100px;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border: 10px solid white;
 }
+
+a:hover {
+    color: white;
+    background-color: tan;
+}
+
 .circle {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     background-color: pink;
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 50px;
     z-index: 500;
 }
+
 .circle2 {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     background-color: tan;
     position: fixed;
-    bottom: 0px;
+    bottom: 20px;
     right: 70px;
 }
+
 .circle3 {
     width: 200px;
     height: 200px;
     border-radius: 100%;
     background-color: white;
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 90px;
     border-radius: 50% solid black;
 }
-.square {
-    width: 50px;
-    height: 10px;
-    background-color: orange;
-    position: fixed;
-    left: 100px;
-}
-div {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    padding: 30px;
-    margin: 40px;
+
+.triangle {
+    width: 1;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 250px solid tan;
+	position: fixed;
+	bottom: 250px;
+	right: 90px;
 }
