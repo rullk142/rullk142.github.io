@@ -65,3 +65,77 @@ a:hover {
 	bottom: 250px;
 	right: 90px;
 }
+
+.cookie {
+    width: 200px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: tan;
+    position: fixed;
+    top: 200px;
+    left: 50px;
+    z-index: 500;
+}
+
+.cookie:hover {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.chip {
+    width: 1;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 10px solid brown;
+	position: fixed;
+	top: 205px;
+	left: 75px;
+}
+
+.chip2 {
+    width: 1;
+	height: 0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-bottom: 13px solid brown;
+	position: fixed;
+	top: 220px;
+	left: 130px;
+}
+
+.chip3 {
+    width: 1;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 10px solid brown;
+	position: fixed;
+	top: 205px;
+	left: 180px;
+}
+
+.chip4 {
+    width: 1;
+	height: 0;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	border-bottom: 12px solid brown;
+	position: fixed;
+	top: 235px;
+	left: 60px;
+}
+
+.chip5 {
+    width: 1;
+	height: 0;
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;
+	border-bottom: 12px solid brown;
+	position: fixed;
+	top: 245px;
+	left: 185px;
+}
