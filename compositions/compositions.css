@@ -71,7 +71,7 @@ a:hover {
     height: 75px;
     border-radius: 100%;
     background-color: tan;
-    position: fixed;
+    position: relative;
     top: 200px;
     left: 50px;
     z-index: 500;
@@ -91,8 +91,8 @@ a:hover {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-bottom: 10px solid brown;
-	position: fixed;
-	top: 205px;
+	position: absolute;
+	top: 50px;
 	left: 75px;
 }
 
@@ -102,9 +102,9 @@ a:hover {
 	border-left: 18px solid transparent;
 	border-right: 18px solid transparent;
 	border-bottom: 13px solid brown;
-	position: fixed;
-	top: 220px;
-	left: 130px;
+	position: absolute;
+	top: 10px;
+	left: 135px;
 }
 
 .chip3 {
@@ -113,9 +113,9 @@ a:hover {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-bottom: 10px solid brown;
-	position: fixed;
-	top: 205px;
-	left: 180px;
+	position: absolute;
+	top: 10px;
+	left: 80px;
 }
 
 .chip4 {
@@ -124,9 +124,9 @@ a:hover {
 	border-left: 17px solid transparent;
 	border-right: 17px solid transparent;
 	border-bottom: 12px solid brown;
-	position: fixed;
-	top: 235px;
-	left: 60px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
 
 .chip5 {
@@ -135,7 +135,7 @@ a:hover {
 	border-left: 17px solid transparent;
 	border-right: 17px solid transparent;
 	border-bottom: 12px solid brown;
-	position: fixed;
-	top: 245px;
-	left: 185px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }

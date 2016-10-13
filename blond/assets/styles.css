@@ -1,0 +1,93 @@
+body {
+    background-image: url("grid.gif");
+}
+.blond {
+    background-color: transparent;
+    height: 150px;
+    width: 540px;
+    transition: all 2s;
+    font-family: "Signpainter", serif;
+    font-weight: bold;
+    color: black;
+    font-size: 250px;
+    position: fixed;
+    top: 1%;
+    left: 55%;
+    z-index: 2;
+    line-height: 200px;
+}
+
+.blond:hover {
+    color: transparent;
+    font-family: "Signpainter", serif;
+}
+
+.eyes {
+    width: 3in;
+    height: 1in;
+    background-image: url(blindeyes.png);
+}
+
+.eyes:hover {
+    background-position: 0 -1in;
+}
+
+.kneegash {
+    top: 5px;
+    margin-left: 300px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-image: url(kneegash.png);
+    z-index: 3;
+    
+}
+
+.kneegash:hover {
+    background-position: 200px 0;
+}
+
+.hairylegs {
+    top: 110px;
+    left: 120px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-image: url(hairylegs.png);
+    z-index: 4;
+}
+
+.hairylegs:hover {
+    background-position: 200px 0;
+}
+
+.rash {
+    top: 300px;
+    left: 300px;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-image: url(rash.png);
+    z-index: 5;
+}
+
+.rash:hover {
+    background-position: 200px 0;
+}
+
+.lyrics {
+    background-color: white;
+    width: 540px;
+    height: 580px;
+    position: fixed;
+    top: 3%;
+    left: 55%;
+    font-family: "Helvetica", san serif;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 20px;
+    animation-name: example;
+    animation-duration: 10s;
+    z-index: 1;
+}
