@@ -2,7 +2,6 @@ body {
     background-image: url("grid.gif");
 }
 .blond {
-    background-color: transparent;
     height: 150px;
     width: 540px;
     transition: all 2s;
@@ -90,4 +89,10 @@ body {
     animation-name: example;
     animation-duration: 10s;
     z-index: 1;
+}
+
+.song {
+    display: inline-block;
+    position: fixed;
+    bottom: 10%;
 }

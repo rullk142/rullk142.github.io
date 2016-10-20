@@ -1,0 +1,263 @@
+body {
+  background: url(bicyclethief.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.places {
+    height: 250px;
+    width: 540px;
+    transition: all 2s;
+    font-family: "Didot", sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 200px;
+    position: relative;
+    top: 1%;
+    left: 40%;
+    z-index: 2;
+    line-height: 200px;
+}
+
+.places:hover {
+    color: black;
+    font-family: "Didot", sans-serif;
+}
+
+.name {
+    width: 540px;
+    display: inline-block;
+    font-family: "Helvetica", sans-serif;
+    color: gray;
+    font-size: 40px;
+    font-weight: normal;
+    position: absolute;
+    line-height: 50px;
+    text-align: left;
+    top: 70%;
+}
+
+.album {
+    text-decoration: none;
+    width: 540px;
+    display: inline-block;
+    font-family: "Helvetica", sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    left: 40%;
+    top: 90%;
+}
+
+.album:hover {
+    font-size: 50px;
+}
+
+.album:active {
+    color: black;
+}
+    
+.lyrics {
+    color: white;
+    width: 500px;
+    position: absolute;
+    left: .25in;
+    bottom: .50in;
+    font-family: "Didot", sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: left;
+    line-height: 60px;
+    animation-name: example;
+    animation-duration: 10s;
+    z-index: 1;
+}
+
+.song {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.smile {
+    background-image: url(smile.png);
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    display: inline-block;
+    right: 5%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.clouds {
+    background-image: url(clouds3.png);
+    position: fixed;
+    display: inline-block;
+    height: 500px;
+    width: 600px;
+    right: 0;
+    top: 60%;
+    z-index: 2;
+}
+
+.oh {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: solid white 3px;
+    background-color: transparent;
+    display: inline-block;
+    position: fixed;
+    right: 15%;
+    top: 58%;
+    animation-name: disappear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disappear {
+    0% {
+        border: solid white 3px;
+        background-color: transparent;
+    }
+    70% {
+        border: solid transparent 3px;
+        background-color: transparent;
+    }
+    100% {
+        border: solid white 3px;
+        background-color: transparent;
+    }
+}
+
+.oh2 {
+    width: 22px;
+    height: 17px;
+    border-radius: 100%;
+    border: solid white 3px;
+    background-color: transparent;
+    display: inline-block;
+    position: fixed;
+    right: 18%;
+    top: 54%;
+    animation-name: disappear2;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes disappear2 {
+    0% {
+        border: solid white 3px;
+        background-color: transparent;
+        height: 17px;
+    }
+    50% {
+        height: 22px;
+    }
+    70% {
+        border: solid transparent 3px;
+        background-color: transparent;
+    }
+    100% {
+        border: solid white 3px;
+        background-color: transparent;
+        height: 17px;
+    }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.oh3 {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid white 3px;
+    background-color: transparent;
+    display: inline-block;
+    position: fixed;
+    right: 20%;
+    top: 48%;
+    animation-name: disappear3;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disappear3 {
+    0% {
+        border: solid white 3px;
+        background-color: transparent;
+    }
+    70% {
+        border: solid transparent 3px;
+        background-color: transparent;
+    }
+    100% {
+        border: solid white 3px;
+        background-color: transparent;
+    }
+}
+
+.clock {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: dotted 5px;
+    border-radius: 200px;
+    position: absolute;
+    animation-name: myclock;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size:20px;
+    font-weight: bold;
+    font-family: "Helvetica", sans-serif;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sun {
+    position: absolute;
+    left: 80;
+    top: 80;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.sun:hover {
+    left: 78;
+    top: 78;
+    width: 45px;
+    height: 45px;
+}
+
+.sun:active {
+    background-color: black;
+}
+
+
+@keyframes myclock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
