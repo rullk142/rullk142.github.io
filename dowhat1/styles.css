@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-size: 0;
+    background: url(circles.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}    
+
+.column {
+    display: inline-block;
+    background-color: orange;
+    height: 35px;
+    line-height: 38px;
+    color: white;
+    font-family: "Futura";
+    font-size: 30px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.full {
+    background-color: black;
+    height: 100px;
+    width: 40%;
+    margin: 20px auto;
+    color: orange;
+    overflow: auto;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 35px;
+    padding: 10px;
+    line-height: normal;
+    font-family: "helvetica";
+    border: solid 5px white;
+    text-align: center;
+}
+
+.button {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    transition: all 2s;
+    font-family: "Futura", serif;
+    font-weight: bold;
+    line-height: 200px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.button:hover {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    font-family: "Futura", serif;
+    font-weight: lighter;
+    line-height: 300px;
+    font-size: 50px;
+}
+
+.arrow {
+    position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid white;
+    z-index: 2;
+}
+
+p {
+    font-family: "Futura";
+    font-size: 40px;
+    line-height: 40px;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+@keyframes example {
+    0% {
+        color: orange;
+    }
+    20% {
+        color: pink;
+    }
+    60% {
+        color: white;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border: dashed 5px orange;
+    border-radius: 200px;
+    position: relative;
+    animation-name: myclock;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.seconds {
+    font-family: "Futura";
+    font-size: 21px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    line-height: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@keyframes myclock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
