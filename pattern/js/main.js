@@ -30,7 +30,6 @@ $(window).mousemove(function(e) {
     console.log(e.clientX);
     console.log(e.clientY);
     $(".go").css("border-radius",e.clientX/20+"%");
-    
 })
 
 $(".go").click(function() {
