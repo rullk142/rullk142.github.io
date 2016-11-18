@@ -22,7 +22,6 @@ $(".go").each(function() {
     console.log(counter);
     console.log("found a div with class go");
     $(this).css("border-radius",counter/2 + "%");
-    
     counter++;
 });
 
@@ -43,3 +42,8 @@ $(".go").click(function() {
 // this = refers to that particular instance that is being operated on as you move through the loop
     // EACH is running the loop
     // THIS refers to specific part of loop
+    
+// “When you deprive people of their right to live in dignity,
+// to hope for a better future, to have control over their lives,
+// when you deprive them of that choice, then you expect them
+// to fight for these rights.” – Queen Rania Al Abdullah of Jordan

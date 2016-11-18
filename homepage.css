@@ -46,6 +46,6 @@ ol {
     text-align: right;
 }
 
-li {
-    text-align: right;
+a:hover {
+    color: red;
 }

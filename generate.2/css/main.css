@@ -72,6 +72,7 @@ img {
    -webkit-transform: rotate(35deg);
    -ms-transform:     rotate(35deg);
    -o-transform:      rotate(35deg);
+   opacity: 0;
 }
 .starfive:before {
    border-bottom: 20px solid white;
