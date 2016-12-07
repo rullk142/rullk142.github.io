@@ -5,3 +5,12 @@ body {
     margin: auto;
     margin-top: 300px;
 }
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    cursor:pointer
+}
