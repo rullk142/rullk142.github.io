@@ -4,6 +4,89 @@ h1 {
     text-align: left;
     margin-top: .26in;
     padding-left: .5in;
-    
-    
+}
+
+.boxOne {
+    height: 50px;
+    width: 900px;
+    position: relative;
+}
+
+.ghost {
+    background-image: url(img/ghost.jpg);
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: .5in;
+}
+
+.booInfo {
+    margin-left: 250px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+h2:hover {
+    cursor:pointer
+}
+
+.boxTwo {
+    height: 50px;
+    width: 900px;
+    position: relative;
+    display: inline-block;
+}
+
+.blond {
+    background-image: url(img/blond.png);
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: .5in;
+    margin-top: 2in;
+}
+
+.blondInfo {
+    margin-left: 245px;
+    margin-top: 2in;
+    position: absolute;
+    display: inline-block;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+}
+
+.boxThree {
+    height: 50px;
+    width: 900px;
+    position: relative;
+    display: inline-block;
+}
+
+.bike {
+    background-image: url(img/bicycle.png);
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 104px;
+    margin-left: .5in;
+    margin-top: 4in;
+}
+
+.bikeInfo {
+    margin-left: 245px;
+    margin-top: 4in;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+    position: absolute;
 }
