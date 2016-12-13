@@ -1,0 +1,51 @@
+h1 {
+    font-family: "Didot", "serif";
+    font-size: 100px;
+    text-align: left;
+    margin-top: .26in;
+    padding-left: .5in;
+}
+
+.boxOne {
+    height: 50px;
+    width: 900px;
+    position: relative;
+}
+
+.hope {
+    background-image: url(img/fist.png);
+    display: inline-block;
+    position: absolute;
+    width: 108px;
+    height: 149px;
+    margin-left: .5in;
+}
+
+.hopeInfo {
+    margin-left: 250px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-family: "Verdana", "sans-serif";
+}
+
+h2:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.homepage {
+    position: fixed;
+    margin-left: 10.2in;
+    display: inline-block;
+    margin-top: 330px;
+    width: 300px;
+    font-size: 15px;
+}
