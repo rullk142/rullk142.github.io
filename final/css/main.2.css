@@ -41,11 +41,66 @@ h2:hover {
     color: white;
 }
 
+.homepage:hover{
+    background-color: red; 
+}
+
 .homepage {
     position: fixed;
-    margin-left: 10.2in;
-    display: inline-block;
-    margin-top: 330px;
-    width: 300px;
+    margin-left: 9.9in;
+    /*display: inline-block;*/
+    bottom: .5in;
+    width: 280px;
     font-size: 15px;
+    background-color: white;
+    text-align: center;
+    line-height: 10px;
+    z-index: 2;
+}
+
+img {
+    position: absolute;
+    display: in-block;
+    margin-right: .5in;
+}
+
+.rightBox {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin-left: 9.8in;
+    margin-right: 1in;
+    margin-top: -2in;
+    /*background-color: red;*/
+    font-family: "Didot", "serif";
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    top: 380px;
+}
+
+.feature {
+    /*background-image: url(img/thumbnail.jpg);*/
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 30px;
+    margin-left: -175px;
+    border: solid black;
+    overflow: hidden;
+}
+
+.feature:hover {
+    cursor:pointer;
+}
+
+.catalog {
+    width: 250px;
+    height: 300px;
+    padding: 25px;
+    margin-top: 75px;
+    font-family: "Didot", "sans-serif";
+    font-size: 40px;
 }
