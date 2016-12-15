@@ -1,6 +1,6 @@
 $("body").css("background-color","#000080");
 
-for (var dots = 0; dots < 50; dots++) {
+for (var dots = 0; dots < 400; dots++) {
     $(".container2").append("<div class='starfive'></div>");
 }
 
@@ -41,6 +41,7 @@ var fist = false;
 
 $(".fist").click(function() {
     if (fist == false) {
+        console.log("you clicked");
         var newPic = pics[Math.floor(Math.random()*pics.length)];
         $("body").append('<img src="' + newPic + '" class="pics">');
         fist = true;

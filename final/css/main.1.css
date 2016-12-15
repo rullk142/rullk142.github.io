@@ -59,6 +59,7 @@ h2:hover {
     width: 900px;
     position: relative;
     display: inline-block;
+    margin-top: 1.5in;
 }
 
 .blond {
@@ -68,12 +69,10 @@ h2:hover {
     width: 150px;
     height: 150px;
     margin-left: .5in;
-    margin-top: 2in;
 }
 
 .blondInfo {
     margin-left: 245px;
-    margin-top: 2in;
     position: absolute;
     display: inline-block;
     font-family: "Verdana", "sans-serif";
@@ -85,6 +84,7 @@ h2:hover {
     width: 900px;
     position: relative;
     display: inline-block;
+    margin-top: 2in;
 }
 
 .bike {
@@ -94,12 +94,10 @@ h2:hover {
     width: 150px;
     height: 104px;
     margin-left: .5in;
-    margin-top: 4in;
 }
 
 .bikeInfo {
     margin-left: 245px;
-    margin-top: 4in;
     margin-bottom: 50px;
     display: inline-block;
     font-family: "Verdana", "sans-serif";

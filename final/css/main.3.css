@@ -6,10 +6,37 @@ h1 {
     padding-left: .5in;
 }
 
+
+.boxTwo {
+    height: 50px;
+    width: 900px;
+    position: absolute;
+    display:inline-block;
+}
+
+.meri {
+    background-image: url(img/flag.png);
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 153px;
+    margin-left: .5in;
+}
+
+.meriInfo {
+    margin-left: 250px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+}
+
 .boxOne {
     height: 50px;
     width: 900px;
     position: relative;
+    display:inline-block;
+    margin-top: 2in;
 }
 
 .milk {
@@ -19,6 +46,7 @@ h1 {
     width: 150px;
     height: 153px;
     margin-left: .5in;
+    /*margin-top: 2in;*/
 }
 
 .milkInfo {
@@ -27,12 +55,14 @@ h1 {
     display: inline-block;
     font-family: "Verdana", "sans-serif";
     text-decoration: none;
+    /*margin-top: 2in;*/
 }
 
 a {
     text-decoration: none;
     color: red;
     font-family: "Verdana", "sans-serif";
+    z-index: 10;
 }
 
 a:hover {
