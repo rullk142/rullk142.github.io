@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Helvetica Rounded";
+    src: url('HelvRouBla.ttf') format("truetype");
+}
+
+body {
+	background-color: white;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: #ff6138;
+}
+
+h1 {
+	color: white;
+	text-align: left;
+	margin-left: 50px;
+	line-height: 30px;
+	font-family: "Helvetica Rounded", "Helvetica", sans-serif;
+	font-size: 48px;
+}
+
+.page {
+	width: 700px;
+	height: 100%;
+	margin-right: 0;
+	position: absolute;
+	right: 2%;
+	width: 66.66%;
+	background-color: gray;
+}
+
+p {
+	color: white;
+	margin: 15px;
+	font-family: "Helvetica Rounded", "Helvetica", sans-serif;
+}
+
+.doge {
+	background-color: pink;
+	width: 33.33%;
+	height: 100%;
+}
