@@ -1,6 +1,17 @@
 @font-face {
-    font-family: "Helvetica Rounded";
-    src: url('HelvRouBla.ttf') format("truetype");
+    font-family: "Helvetica Rounded Black";
+    src: url('fonts/HelveticaRounded-Black.ttf');
+}
+
+@font-face {
+    font-family: "Helvetica Rounded Bold";
+    src: url('fonts/HelveticaRounded-Bold.ttf');
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -9,37 +20,93 @@ body {
 
 .header {
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	background-color: #ff6138;
+	position: relative;
 }
 
 h1 {
 	color: white;
 	text-align: left;
 	margin-left: 50px;
-	line-height: 30px;
-	font-family: "Helvetica Rounded", "Helvetica", sans-serif;
+	margin-top: 25px;
+	line-height: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
 	font-size: 48px;
+	position: absolute;
+	letter-spacing: .5px;
+}
+
+h2 {
+	color: white;
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 45px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+	font-size: 48px;
+	position: absolute;
+	letter-spacing: -2.5px;
 }
 
 .page {
-	width: 700px;
+	width: 100%;
 	height: 100%;
-	margin-right: 0;
 	position: absolute;
-	right: 2%;
 	width: 66.66%;
-	background-color: gray;
+	right: 0;
+	background-color: white;
 }
 
 p {
-	color: white;
-	margin: 15px;
-	font-family: "Helvetica Rounded", "Helvetica", sans-serif;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#start {
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#start:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#begin {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#yesthat {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#gasp {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#lost {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
 }
 
 .doge {
-	background-color: pink;
+	background-color: black;
 	width: 33.33%;
 	height: 100%;
+	position: absolute;
+	left: 0;
+
 }
