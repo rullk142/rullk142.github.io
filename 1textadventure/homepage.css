@@ -61,6 +61,7 @@ p {
 	color: black;
 	margin-left: 15px;
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+	font-size: 12px;
 }
 
 #start {
@@ -96,6 +97,196 @@ p {
 }
 
 #lost {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#one {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#stare {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#stare:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#notice {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#jump {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#jump:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#air {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#closer {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#closer:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#squat {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#gaspii {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#lostii {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#two {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+
+#smack {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#smack:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#heck {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#wave {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#wave:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#smiles {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#stretch {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#stretch:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#sniffs {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+
+#three {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+
+#poke {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#poke:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#fade {
+	display: none;
+	color: black;
+	margin-left: 15px;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+}
+
+#pet {
+	display: none;
+	color: black;
+	margin-left: 40px;
+	font-family: "Helvetica Rounded Black", "Helvetica", sans-serif;
+}
+
+#pet:hover {
+	color: #ff6138;
+	cursor: pointer;
+}
+
+#bliss {
 	display: none;
 	color: black;
 	margin-left: 15px;
