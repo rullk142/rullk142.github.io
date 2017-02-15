@@ -7,8 +7,8 @@ function scrollToBottom() {
 
 $("#start").click(function() {
         console.log("congrats, you clicked it")
-        $("#begin").show();
-        $("#yesthat").delay('slow').fadeIn();
+        $("#begin").delay('slow').fadeIn();
+        // $("#yesthat").delay('slow').fadeIn();
         setTimeout(scrollToBottom, 1000);
         $("#gasp").delay('2000').fadeIn();
         setTimeout(scrollToBottom, 2500);
