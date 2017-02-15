@@ -51,15 +51,15 @@ h2 {
 	letter-spacing: -2.5px;
 }
 
-.page {
+#page {
 	width: 100%;
-	height: 95%;
-	position: absolute;
+	height: 75%;
+	position: fixed;
 	width: 66.66%;
 	right: 0;
 	background-color: white;
 	overflow: scroll;
-	z-index: 1;
+	z-index: 3;
 	margin-top: 135px;
 }
 
@@ -413,4 +413,18 @@ p {
 	position: fixed;
 	left: 0;
 	z-index: 2;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+#heart {
+	width: 100px;
+	height: 82px;
+	position: absolute;
+	margin-top: 135px;
+	z-index: 5;
+	background-image: url(img/emptyheart.png);
 }
