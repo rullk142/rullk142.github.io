@@ -4,6 +4,18 @@ function scrollToBottom() {
 	$("#page").animate({scrollTop: $("#page").get(0).scrollHeight}, 1000);
 	console.log("scroll?");
 };
+var clicked = false;
+
+$("#walkingdoge").click(function() {
+        if (clicked == false) {
+                $("#walkingdoge").css("background-image", "url(img/still.png)");
+                console.log("click?");
+                clicked = true;
+        } else {
+                $("#walkingdoge").css("background-image", "url(img/walkingdoge.gif)");
+                clicked = false;
+        }
+});
 
 $("#start").click(function() {
         console.log("congrats, you clicked it")
@@ -43,27 +55,17 @@ $("#jump").click(function() {
         $("#air").delay('slow').fadeIn();
         $("#jump").css("color", "black");
         $("#jump").css("cursor", "default");
-        // $("#notice").remove();
-        // $("#squat").remove();
-        // $("#stare").off("click");
-        // $("#closer").off("click");
-        // $("#gaspii").delay('2000').fadeIn();
-        // $("#lostii").delay('3000').fadeIn();
         setTimeout(scrollToBottom, 1000);
         $("#doge").css("background-position-y", "-230px");
-        $("#doge").css("margin", "125px 60px");
-        setTimeout(function() { $("#doge").css("margin", "200px 60px"); }, 250);
-        // margin: 200px 60px;
+        $("#container").css("margin", "125px -110px");
+        setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
+        // jump function
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
 
 $("#closer").click(function() {
         $("#squat").delay('slow').fadeIn();
         setTimeout(scrollToBottom, 1000);
-        // $("#notice").remove();
-        // $("#air").remove();
-        // $("#jump").off("click");
-        // $("#stare").off("click");
         $("#two").delay("2000").fadeIn();
         $("#smack").delay("2000").fadeIn();
         $("#wave").delay("2000").fadeIn();
@@ -75,7 +77,7 @@ $("#closer").click(function() {
         $("#jump").css("cursor", "default");
         $("#closer").css("cursor", "default");
         setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-32px");
+        $("#heart").css("background-position-y", "-34.65px");
         $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
@@ -123,7 +125,7 @@ $("#stretch").click(function() {
         $("#wave").css("cursor", "default");
         $("#stretch").css("cursor", "default");
         setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-67px");
+        $("#heart").css("background-position-y", "-68px");
         $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 
@@ -156,7 +158,7 @@ $("#pet").click(function() {
         $("#poke").css("cursor", "default");
         $("#pet").css("cursor", "default");
         setTimeout(scrollToBottom, 4500);
-        $("#heart").css("background-position-y", "-101px");
+        $("#heart").css("background-position-y", "-102px");
         $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 
@@ -172,12 +174,13 @@ $("#return").click(function() {
 	$("#take").remove();
 	// $("#end").delay('6000').fadeIn();
 	setTimeout(scrollToBottom, 6500);
-        // $("#doge").css("background-position-y", "-230px");
+        $("#doge").css("background-position-y", "-230px");
         // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
-        $("#doge").css("margin", "125px 60px");
-        setTimeout(function() { $("#doge").css("margin", "200px 60px"); }, 500);
+        $("#container").css("margin", "125px -110px");
+        setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
         $("#doge").delay('5000').animate({'left': '-=350px'}, 2000);
-        $("#poop").delay('10500').fadeIn();
+        $("#poop").delay('5500').fadeIn();
+        $("#heart").css("background-position-y", "-135px")
 });
 
 $("#take").click(function() {
@@ -187,6 +190,7 @@ $("#take").click(function() {
 	$("#take").css("color", "#ff6138");
 	$("#return").css("color", "black");
         $("#return").css("cursor", "default");
+        $("#return").remove();
 	// $("#end").delay('2000').fadeIn();
 	setTimeout(scrollToBottom, 2500);
         $("#heart").css("background-position-y", "-135px")
