@@ -22,7 +22,7 @@ $("#start").click(function() {
         $("#start").css("cursor", "default");
         setTimeout(scrollToBottom, 4500);
         $("#doge").delay('3000').fadeIn();
-        $("#heart").delay('1000').fadeIn();
+        $("#heart").delay('3000').fadeIn();
 
 });
 
@@ -51,6 +51,9 @@ $("#jump").click(function() {
         // $("#lostii").delay('3000').fadeIn();
         setTimeout(scrollToBottom, 1000);
         $("#doge").css("background-position-y", "-230px");
+        $("#doge").css("margin", "125px 60px");
+        setTimeout(function() { $("#doge").css("margin", "200px 60px"); }, 250);
+        // margin: 200px 60px;
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
 
@@ -72,8 +75,8 @@ $("#closer").click(function() {
         $("#jump").css("cursor", "default");
         $("#closer").css("cursor", "default");
         setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-31px");
-        $("#doge").css("background-position-y", "-255px");
+        $("#heart").css("background-position-y", "-32px");
+        $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
 
@@ -92,20 +95,20 @@ $("#smack").click(function() {
 });
 
 $("#wave").click(function() {
-		$("#smiles").delay('slow').fadeIn();
-		setTimeout(scrollToBottom, 1000);
-		$("#wave").css("color", "black");
+	$("#smiles").delay('slow').fadeIn();
+	setTimeout(scrollToBottom, 1000);
+	$("#wave").css("color", "black");
         $("#wave").css("cursor", "default");
 		// $("#heck").remove();
 		// $("#sniffs").remove();
 		// $("#smack").off("click");
 		// $("#stretch").off("click");
-		setTimeout(scrollToBottom, 1000);
+	setTimeout(scrollToBottom, 1000);
 });
 
 $("#stretch").click(function() {
-		$("#sniffs").delay('slow').fadeIn();
-		setTimeout(scrollToBottom, 1000);
+	$("#sniffs").delay('slow').fadeIn();
+	setTimeout(scrollToBottom, 1000);
 		// $("#smiles").remove();
 		// $("#heck").remove();
 		// $("#wave").off("click");
@@ -120,8 +123,8 @@ $("#stretch").click(function() {
         $("#wave").css("cursor", "default");
         $("#stretch").css("cursor", "default");
         setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-62px");
-        $("#doge").css("background-position-y", "-255px");
+        $("#heart").css("background-position-y", "-67px");
+        $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 
 });
@@ -139,39 +142,42 @@ $("#poke").click(function() {
 });
 
 $("#pet").click(function() {
-		$("#bliss").delay('slow').fadeIn();
-		setTimeout(scrollToBottom, 1000);
-		// $("#fade").remove();
-		// $("#poke").off("click");
-		$("#four").delay("2000").fadeIn();
-		setTimeout(scrollToBottom, 2500);
-		$("#fourii").delay("4000").fadeIn();
-		$("#return").delay("4000").fadeIn();
-		$("#take").delay("4000").fadeIn();
-		$("#pet").css("color", "#ff6138");
+	$("#bliss").delay('slow').fadeIn();
+	setTimeout(scrollToBottom, 1000);
+	// $("#fade").remove();
+	// $("#poke").off("click");
+	$("#four").delay("2000").fadeIn();
+	setTimeout(scrollToBottom, 2500);
+	$("#fourii").delay("4000").fadeIn();
+	$("#return").delay("4000").fadeIn();
+	$("#take").delay("4000").fadeIn();
+	$("#pet").css("color", "#ff6138");
         $("#poke").css("color", "black");
         $("#poke").css("cursor", "default");
         $("#pet").css("cursor", "default");
         setTimeout(scrollToBottom, 4500);
-        $("#heart").css("background-position-y", "-93px");
-        $("#doge").css("background-position-y", "-460px");
+        $("#heart").css("background-position-y", "-101px");
+        $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 
 });
 
 $("#return").click(function() {
-		$("#cry").delay('slow').fadeIn();
-		setTimeout(scrollToBottom, 1000);
-		$("#cryii").delay('2000').fadeIn();
-		setTimeout(scrollToBottom, 2500);
-		$("#cryiii").delay('4000').fadeIn();
-		$("#return").css("color", "#ff6138");
-		$("#take").remove();
-		// $("#end").delay('6000').fadeIn();
-		setTimeout(scrollToBottom, 6500);
-        $("#doge").css("background-position-y", "-230px");
-        setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
-
+	$("#cry").delay('slow').fadeIn();
+	setTimeout(scrollToBottom, 1000);
+	$("#cryii").delay('2000').fadeIn();
+	setTimeout(scrollToBottom, 2500);
+	$("#cryiii").delay('4000').fadeIn();
+	$("#return").css("color", "#ff6138");
+	$("#take").remove();
+	// $("#end").delay('6000').fadeIn();
+	setTimeout(scrollToBottom, 6500);
+        // $("#doge").css("background-position-y", "-230px");
+        // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
+        $("#doge").css("margin", "125px 60px");
+        setTimeout(function() { $("#doge").css("margin", "200px 60px"); }, 500);
+        $("#doge").delay('5000').animate({'left': '-=350px'}, 2000);
+        $("#poop").delay('10500').fadeIn();
 });
 
 $("#take").click(function() {
@@ -183,8 +189,6 @@ $("#take").click(function() {
         $("#return").css("cursor", "default");
 	// $("#end").delay('2000').fadeIn();
 	setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-124px")
-        $("#doge").css("background-position-y", "-255px");
-        setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
-
+        $("#heart").css("background-position-y", "-135px")
+        $("#doge").css("background-position-y", "-455px");
 });
