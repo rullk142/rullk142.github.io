@@ -16,7 +16,7 @@ function scrollToBottom() {
 
 $("#start").click(function() {
         console.log("congrats, you clicked it")
-        $("#walkingdoge").css("background-image", "url(img/still.png");
+        setTimeout(function() { $("#walkingdoge").css("background-image", "url(img/still.png)"); }, 2500);
         $("#begin").delay('slow').fadeIn();
         // $("#yesthat").delay('slow').fadeIn();
         setTimeout(scrollToBottom, 1000);
@@ -35,18 +35,18 @@ $("#start").click(function() {
         $("#heart").delay('3000').fadeIn();
 });
 
-var clicked = false;
+// var clicked = false;
 
-$("#walkingdoge").click(function() {
-        if (clicked == true) {
-                $("#walkingdoge").css("background-image", "url(img/still.png)");
-                console.log("click?");
-                clicked = false;
-        } else {
-                $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)");
-                clicked = true;
-        }
-});
+// $("#walkingdoge").click(function() {
+//         if (clicked == true) {
+//                 $("#walkingdoge").css("background-image", "url(img/still.png)");
+//                 console.log("click?");
+//                 clicked = false;
+//         } else {
+//                 $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)");
+//                 clicked = true;
+//         }
+// });
 
 $("#stare").click(function() {
         $("#notice").delay('slow').fadeIn();
@@ -68,7 +68,7 @@ $("#jump").click(function() {
         setTimeout(scrollToBottom, 1000);
         $("#doge").css("background-position-y", "-230px");
         $("#container").css("margin", "125px -110px");
-        setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
+        setTimeout(function() { $("#container").css("margin", "225px -110px"); }, 250);
         // jump function
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
@@ -87,7 +87,7 @@ $("#closer").click(function() {
         $("#jump").css("cursor", "default");
         $("#closer").css("cursor", "default");
         setTimeout(scrollToBottom, 2500);
-        $("#heart").css("background-position-y", "-34.65px");
+        $("#heart").css("background-position-y", "-34.4px");
         $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
 });
@@ -160,9 +160,9 @@ $("#pet").click(function() {
 	$("#poke").off("click");
 	$("#four").delay("2000").fadeIn();
 	setTimeout(scrollToBottom, 2500);
-	$("#fourii").delay("4000").fadeIn();
-	$("#return").delay("4000").fadeIn();
-	$("#take").delay("4000").fadeIn();
+	$("#fourii").delay("6000").fadeIn();
+	$("#return").delay("6000").fadeIn();
+	$("#take").delay("6000").fadeIn();
 	$("#pet").css("color", "#ff6138");
         $("#poke").css("color", "black");
         $("#poke").css("cursor", "default");
@@ -184,13 +184,13 @@ $("#return").click(function() {
 	$("#take").remove();
 	// $("#end").delay('6000').fadeIn();
 	setTimeout(scrollToBottom, 6500);
-    $("#doge").css("background-position-y", "-230px");
+    $("#doge").css("background-position-y", "-455px");
     // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
     $("#container").css("margin", "125px -110px");
-        setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
-        $("#doge").delay('5000').animate({'left': '-=400px'}, 2000);
-        $("#poop").delay('5500').fadeIn();
-    	setTimeout(function() { $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)"); }, 5500);
+        setTimeout(function() { $("#container").css("margin", "225px -110px"); }, 250);
+        $("#doge").delay('8000').animate({'left': '-=400px'}, 2000);
+        $("#poop").delay('8500').fadeIn();
+    	setTimeout(function() { $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)"); }, 8500);
         $("#heart").css("background-position-y", "-135px")
 });
 
