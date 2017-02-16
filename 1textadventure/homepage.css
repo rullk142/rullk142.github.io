@@ -63,7 +63,6 @@ body {
 a {
     color: white;
     text-decoration: none;
-    cursor: auto;
 }
 
 h1 {
@@ -125,7 +124,7 @@ p {
 	margin-left: 35px;
 	margin-right: 35px;
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 #start {

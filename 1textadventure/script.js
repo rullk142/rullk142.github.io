@@ -184,12 +184,13 @@ $("#return").click(function() {
 	$("#take").remove();
 	// $("#end").delay('6000').fadeIn();
 	setTimeout(scrollToBottom, 6500);
-        $("#doge").css("background-position-y", "-230px");
-        // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
-        $("#container").css("margin", "125px -110px");
+    $("#doge").css("background-position-y", "-230px");
+    // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
+    $("#container").css("margin", "125px -110px");
         setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
         $("#doge").delay('5000').animate({'left': '-=400px'}, 2000);
         $("#poop").delay('5500').fadeIn();
+    	setTimeout(function() { $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)"); }, 5500);
         $("#heart").css("background-position-y", "-135px")
 });
 
