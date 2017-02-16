@@ -154,20 +154,21 @@ $("#poke").click(function() {
 });
 
 $("#pet").click(function() {
+	console.log("SCROLL?");
 	$("#bliss").delay('slow').fadeIn();
 	setTimeout(scrollToBottom, 1000);
 	// $("#fade").remove();
 	$("#poke").off("click");
 	$("#four").delay("2000").fadeIn();
 	setTimeout(scrollToBottom, 2500);
-	$("#fourii").delay("6000").fadeIn();
-	$("#return").delay("6000").fadeIn();
-	$("#take").delay("6000").fadeIn();
+	$("#fourii").delay("3000").fadeIn();
+	$("#return").delay("3000").fadeIn();
+	$("#take").delay("3000").fadeIn();
+	setTimeout(scrollToBottom, 4000);
 	$("#pet").css("color", "#ff6138");
         $("#poke").css("color", "black");
         $("#poke").css("cursor", "default");
         $("#pet").css("cursor", "default");
-        setTimeout(scrollToBottom, 4500);
         $("#heart").css("background-position-y", "-102px");
         $("#doge").css("background-position-y", "-455px");
         setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
