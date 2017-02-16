@@ -161,10 +161,10 @@ $("#pet").click(function() {
 	$("#poke").off("click");
 	$("#four").delay("2000").fadeIn();
 	setTimeout(scrollToBottom, 2500);
-	$("#fourii").delay("3000").fadeIn();
-	$("#return").delay("3000").fadeIn();
-	$("#take").delay("3000").fadeIn();
-	setTimeout(scrollToBottom, 4000);
+	$("#fourii").delay("5000").fadeIn();
+	$("#return").delay("5000").fadeIn();
+	$("#take").delay("5000").fadeIn();
+	setTimeout(scrollToBottom, 5500);
 	$("#pet").css("color", "#ff6138");
         $("#poke").css("color", "black");
         $("#poke").css("cursor", "default");
