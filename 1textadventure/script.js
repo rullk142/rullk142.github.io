@@ -1,5 +1,14 @@
 console.log("it's printing")
 
+$("h1").click(function() {
+	$("h1").contents().wrap('<a href="index.html"></a>');
+});
+
+$("h2").click(function() {
+	$("h2").contents().wrap('<a href="index.html"></a>');
+});
+
+
 function scrollToBottom() {
 	$("#page").animate({scrollTop: $("#page").get(0).scrollHeight}, 1000);
 	console.log("scroll?");
@@ -148,7 +157,7 @@ $("#pet").click(function() {
 	$("#bliss").delay('slow').fadeIn();
 	setTimeout(scrollToBottom, 1000);
 	// $("#fade").remove();
-	// $("#poke").off("click");
+	$("#poke").off("click");
 	$("#four").delay("2000").fadeIn();
 	setTimeout(scrollToBottom, 2500);
 	$("#fourii").delay("4000").fadeIn();
@@ -179,7 +188,7 @@ $("#return").click(function() {
         // setTimeout(function() { $("#doge").css("background-position-y", "0px"); }, 5000);
         $("#container").css("margin", "125px -110px");
         setTimeout(function() { $("#container").css("margin", "150px -110px"); }, 250);
-        $("#doge").delay('5000').animate({'left': '-=350px'}, 2000);
+        $("#doge").delay('5000').animate({'left': '-=400px'}, 2000);
         $("#poop").delay('5500').fadeIn();
         $("#heart").css("background-position-y", "-135px")
 });
@@ -191,7 +200,7 @@ $("#take").click(function() {
 	$("#take").css("color", "#ff6138");
 	$("#return").css("color", "black");
         $("#return").css("cursor", "default");
-        $("#return").remove();
+        $("#return").off("click");
 	// $("#end").delay('2000').fadeIn();
 	setTimeout(scrollToBottom, 2500);
         $("#heart").css("background-position-y", "-135px")
