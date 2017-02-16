@@ -4,21 +4,10 @@ function scrollToBottom() {
 	$("#page").animate({scrollTop: $("#page").get(0).scrollHeight}, 1000);
 	console.log("scroll?");
 };
-var clicked = false;
-
-$("#walkingdoge").click(function() {
-        if (clicked == false) {
-                $("#walkingdoge").css("background-image", "url(img/still.png)");
-                console.log("click?");
-                clicked = true;
-        } else {
-                $("#walkingdoge").css("background-image", "url(img/walkingdoge.gif)");
-                clicked = false;
-        }
-});
 
 $("#start").click(function() {
         console.log("congrats, you clicked it")
+        $("#walkingdoge").css("background-image", "url(img/still.png");
         $("#begin").delay('slow').fadeIn();
         // $("#yesthat").delay('slow').fadeIn();
         setTimeout(scrollToBottom, 1000);
@@ -35,7 +24,19 @@ $("#start").click(function() {
         setTimeout(scrollToBottom, 4500);
         $("#doge").delay('3000').fadeIn();
         $("#heart").delay('3000').fadeIn();
+});
 
+var clicked = false;
+
+$("#walkingdoge").click(function() {
+        if (clicked == true) {
+                $("#walkingdoge").css("background-image", "url(img/still.png)");
+                console.log("click?");
+                clicked = false;
+        } else {
+                $("#walkingdoge").css("background-image", "url(img/walkingdoge3.gif)");
+                clicked = true;
+        }
 });
 
 $("#stare").click(function() {
