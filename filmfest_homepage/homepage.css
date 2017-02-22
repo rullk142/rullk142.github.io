@@ -47,7 +47,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     /*background-color: blue;*/
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: center;
@@ -124,8 +124,9 @@ hr3 {
 
 .line {
 	height: 1px;
-	background: purple;
-	border-bottom: 1px solid #313030;
+    width: 600px;
+    background: purple;
+    border-bottom: 1px solid #313030;
 }
 
 #words {
