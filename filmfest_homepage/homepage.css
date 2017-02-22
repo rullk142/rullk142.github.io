@@ -50,10 +50,11 @@ html, body {
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: center;
-	position: relative;
+	position: fixed;
 	line-height: 52px;
 	text-decoration: underline;
 	color: purple;
+	display: inline-block;
 
 }
 
