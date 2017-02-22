@@ -72,7 +72,7 @@ html, body {
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: left;
-	position: relative;
+	position: absolute;
 	margin-left: auto;
 	padding-top: 20px;
 /*	margin-right: auto;
