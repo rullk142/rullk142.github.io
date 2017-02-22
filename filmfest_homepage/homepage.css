@@ -2,59 +2,94 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow: scroll;
-	background-color: white;
+	background-color: lightgray;
 	position: relative;
 }
 
 #header {
-	width: auto;
-	height: 50%;
-	background-color: lightblue;
-	position: relative;
+	width: 80%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+/*	background-color: lightblue;
+*/	position: relative;
+	color: purple;
 }
 
 #title {
-	font-size: 72px;
+	font-size: 36px;
 	font-weight: bolder;
 	font-family: Helvetica;
-	text-align: left;
-	position: absolute;
-	margin-left: 40px;
-	top: 50%;
-    transform: translateY(-60%) rotate(-10deg);
-}
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25;
+/*  transform: translateY(-60%) rotate(-10deg);
+*/}
+
+#title2 {
+	font-size: 48px;
+	font-weight: bolder;
+	font-family: Helvetica;
+	text-align: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 20;
+/*  transform: translateY(-60%) rotate(-10deg);
+*/}
 
 #tabs {
-	width: 50px;
-	height: 75px;
-	background-color: blue;
-	font-size: 16px;
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: blue;*/
+	font-size: 20px;
 	font-family: Helvetica;
 	font-weight: bolder;
-	text-align: left;
-	position: absolute;
-	right: 0;
-	margin: 20px;
+	text-align: center;
+	position: relative;
+	line-height: 52px;
+	text-decoration: underline;
+	color: purple;
+
 }
 
 #details {
 	width: 50%;
-	height: 50%;
-	position: absolute;
+	height: 100%;
+	position: relative;
 	bottom: 0;
 }
 
 #event {
-	width: 100%;
-	height: 50%;
+	width: 80%;
+	height: 100%;
+	background-color: pink;
 	font-size: 30px;
 	font-family: Helvetica;
 	font-weight: bolder;
 	text-align: left;
 	position: relative;
-	right: 0;
-	margin: 20px;
-	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 20px;
+/*	margin-right: auto;
+*/
+}
+
+hr3 {
+	font-size: 30px;
+	font-family: arial;
+	font-weight: bolder;
+	text-align: left;
+	position: relative;
+	left: 0;
+	color: black;
+/*	margin-top: 20px;*/
+	text-decoration: underline;
+	line-height: 30px;
 }
 
 #deets {
@@ -64,21 +99,33 @@ html, body {
 	position: relative;
 	left: 0;
 	margin-left: 20px;
+	line-height: 25px;
 }
 
 #ft {
-	width: 50%;
-	height: 50%;
-	background-color: blue;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	display: inline-block;
-	overflow: scroll;
-	z-index: 1;
+    width: 90%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    overflow: scroll;
+    margin-left: 200px;
+    margin-top: 183px;
 }
 
-#time {
+#words {
+	width: 60%;
+	height: 100%;
+	background-color: white;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	display: inline-block;
+}
+
+/*#time {
 	font-size: 20px;
 	font-family: Helvetica;
 	font-weight: bolder;
@@ -92,7 +139,7 @@ html, body {
 	height: 30%;
 	z-index: 2;
 	overflow: scroll;
-}
+}*/
 
 hr1 {
 	font-size: 30px;
@@ -101,7 +148,7 @@ hr1 {
 	text-align: left;
 	position: relative;
 	left: 0;
-	color: white;
+	color: black;
 }
 
 hr2 {
@@ -111,7 +158,7 @@ hr2 {
 	text-align: left;
 	position: relative;
 	left: 0;
-	color: white;
+	color: black;
 }
 
 p {
@@ -120,7 +167,7 @@ p {
 	text-align: left;
 	position: relative;
 	left: 0;
-	color: white;
+	color: black;
 }
 
 #air {
