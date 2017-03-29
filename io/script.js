@@ -18,6 +18,10 @@ window.addEventListener("keydown", function(e) {
 setInterval(function(){
 	opacity = opacity - 0.01;
  	document.body.style.background = "rgba(100%, 21.2%, 38.6%, " + opacity + ")";
+ 	document.body.children.bgclouds.style.opacity = opacity - 0.01;
+ 	if (document.body.children.bgclouds.style.opacity == 0) {
+ 		clearInterval();
+ 	}
 } ,1000)
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
