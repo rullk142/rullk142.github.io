@@ -1,28 +1,55 @@
 html, body, {
+    height: 100%; 
     width: 100%;
-    height: 100%;
+    margin: 0px; 
+    padding: 0px;
 }
 
-body {
-    background: rgba(100%, 21.2%, 38.6%, 0.0);
+html {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
 }
+
+#bgclouds {
+    width: 100%;
+    height: 100%;
+    background: url(img/bgclouds.png) repeat center center fixed; 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    opacity: 1.0;
+    z-index: 2;
+    opacity: 0.0;
+}
+
+#frontclouds {
+    width: 100%;
+    height: 100%;
+    background: url(img/frontclouds.png) repeat center center fixed; 
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    opacity: 1.0;
+/*    display: none;*/
+}
+
+/*look at old code from CC to see how to animate within CSS*/
+/*animate clouds to sway back and forth*/
 
 textarea {
     color: #ff033e;
     padding: 10px;
-    margin: 1in;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: block;
-    z-index: 3;
+    z-index: 4;
     font-family: "Caslon";
     font-style: italic;
     font-size: 16px;
-}
-
-#frontclouds {
-    background-image: url(frontclouds.png);
-    display: inline-block;
-    z-index: 2;
 }
