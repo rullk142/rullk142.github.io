@@ -55,7 +55,7 @@ html {
     position: absolute;
     z-index: 3;
     top: 0;
-    opacity: 1.0;
+    opacity: 0.0;
 /*    display: none;*/
     animation-name: float;
     animation-duration: 180s;
@@ -76,10 +76,6 @@ html {
         background-size: cover; 
     }
 }
-
-
-/*look at old code from CC to see how to animate within CSS*/
-/*animate clouds to sway back and forth*/
 
 textarea {
     color: #ff033e;
