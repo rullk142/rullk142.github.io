@@ -15,17 +15,19 @@ window.addEventListener("keydown", function(e) {
     	document.body.children.frontclouds.style.opacity = opacity + 0.06;
     	song.play();
     }
-    // if (e.target.textLength >= 40) {
-    // 	document.body.children.frontclouds.style.opacity = opacity + 0.5;
-    // }
         console.log(song.volume)
 });
 
 //change keyup to keydown when finished testing eventListener
 
 setInterval(function(){
-	opacity = opacity - 0.07;
-	song.volume = song.volume - 0.01;
+	opacity = opacity - 0.04;
+	if (song.volume <= 0) {
+    	console.log("negative");
+    } else {
+    	song.volume = song.volume - 0.02;
+    }
+	
 	document.body.style.background = "rgba(0,128,255, " + opacity + ")"; 	
  	if ((document.body.children.bgclouds.style.opacity) >= 0.01) {
  		document.body.children.bgclouds.style.opacity = opacity - 0.01;
@@ -33,9 +35,6 @@ setInterval(function(){
  	if ((document.body.children.frontclouds.style.opacity) >= 0.01) {
  		document.body.children.frontclouds.style.opacity = opacity - 0.01;
  	}
- 	if (song.volume <= 0.001) {
-    	song.volume = 0;
-    }
  	console.log(song.volume);
 } ,2000)
 
