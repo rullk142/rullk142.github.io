@@ -45,6 +45,5 @@ setInterval(function(){
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
 
 // TO DO
-// change colors to blue
 // add border gradient?
 // string inputs for certain words?
