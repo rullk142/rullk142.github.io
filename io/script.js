@@ -22,12 +22,7 @@ window.addEventListener("keydown", function(e) {
 
 setInterval(function(){
 	opacity = opacity - 0.04;
-	if (song.volume <= 0) {
-    	console.log("negative");
-    } else {
-    	song.volume = song.volume - 0.02;
-    }
-	
+    song.volume = song.volume - 0.02;
 	document.body.style.background = "rgba(0,128,255, " + opacity + ")"; 	
  	if ((document.body.children.bgclouds.style.opacity) >= 0.01) {
  		document.body.children.bgclouds.style.opacity = opacity - 0.01;
