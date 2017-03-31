@@ -21,7 +21,7 @@ window.addEventListener("keydown", function(e) {
 //change keyup to keydown when finished testing eventListener
 
 setInterval(function(){
-	opacity = opacity - 0.04;
+	opacity = opacity - 0.02;
     song.volume = song.volume - 0.02;
 	document.body.style.background = "rgba(0,128,255, " + opacity + ")"; 	
  	if ((document.body.children.bgclouds.style.opacity) >= 0.01) {
