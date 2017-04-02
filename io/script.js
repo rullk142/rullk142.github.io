@@ -33,7 +33,7 @@ setInterval(function(){
     if (song.volume - 0.02 < 0) {
         song.volume = 0;
     } else {
-        song.volume = song.volume - 0.02;
+        song.volume = song.volume - 0.015;
     }
 	
     document.body.style.background = "rgba(0,128,255, " + opacity + ")"; 	
