@@ -59,7 +59,8 @@ setInterval(function(){
         // if (document.body.style.background <= "rgba(0,128,255, " + 0.1 + ")") {
         //     document.body.style.background == "rgba(0,128,255, 0)";
         // }
-    console.log(document.body.children.frontclouds.style);
+    console.log("The opacity of clouds is: " + document.body.children.frontclouds.style.opacity);
+    console.log("The volume is: " + song.volume);
 } ,2000)
 
 
