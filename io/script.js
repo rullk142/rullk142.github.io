@@ -33,16 +33,18 @@ setInterval(function(){
     if (song.volume - 0.02 < 0) {
         song.volume = 0;
     } else {
-        song.volume = song.volume - 0.015;
+        song.volume = song.volume - 0.0125;
     }
 	
     document.body.style.background = "rgba(0,128,255, " + opacity + ")"; 	
  	
-    if ((document.body.children.bgclouds.style.opacity) - opacity - 0.1 < 0) {
-    	document.body.children.bgclouds.style.opacity = 0;
-    } else {
-    	document.body.children.bgclouds.style.opacity = opacity - 0.01;
-    }
+    document.body.children.bgclouds.style.opacity = Math.max(0, opacity - 0.01)
+
+    // if ((document.body.children.bgclouds.style.opacity) - opacity - 0.1 < 0) {
+    // 	document.body.children.bgclouds.style.opacity = 0;
+    // } else {
+    // 	document.body.children.bgclouds.style.opacity = opacity - 0.01;
+    // }
 
  	// if ((document.body.children.bgclouds.style.opacity) >= 0.01) {
  	// 	document.body.children.bgclouds.style.opacity = opacity - 0.01;
