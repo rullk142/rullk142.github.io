@@ -36,10 +36,22 @@
 	height: 13px;
 	padding: 5px;
 	margin-top: 20px;
-	border: 2px solid pink;
+	border: 2px solid black;
 	border-radius: 5px;
 	margin: 5px;
 	position: relative;
 	top: 30px;
 	display: inline-block;
+	text-decoration: none;
+}
+
+a {
+	color: black;
+}
+
+#words:hover, #graffiti:hover, #brands:hover, #purple:hover, #blue:hover, #green:hover {
+	background-color: black;
+	color: white;
+/*	cursor: pointer;*/
+
 }
