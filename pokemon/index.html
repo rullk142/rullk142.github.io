@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="underscore-min.js"></script>
+        <script src="pokemon.js"></script>
+    </head>
+
+    <body>
+        <label>Select sort mode...</label>
+        <select id="sort">
+            <option>Name</option>
+            <option>Number</option>
+
+        </select>
+
+        <label>Select filter...</label>
+        <select id="filter">
+            <option>Water</option>
+            <option>Fire</option>
+            <option>Poison</option>
+        </select>
+
+    <div id="holder"></div>
+         <script>
+         var sortMode = "name";
+         var filterMode = "Water";
+
+            var sortSelect  = document.getElementById("sort");
+            sortSelect.addEventListener("change", function(e) {
+                if (sortSelect.value == "Name") {
+                    sortMode = "name";
+               } else if (sortSelect.value == "Number") {
+                    sortMode = "id";
+               }
+               update();
+            });
+
+            var filterSelect = document.getElementById("filter");
+            filterSelect.addEventListener("change", function(e) {
+                filterMode = filterSelect.value;
+                update();
+            })
+
+            function update() { 
+                console.log(sortMode, filterMode);
+                var filtered = _.filter(pokemon, function(p) {
+                    return p.type.includes(filterMode);
+                });
+                //filters pass by true or false, if true it will be added to array of "filtered"
+                //p gives us the individual
+                //.includes returns true or false
+
+                var sorted = _.sortBy(filtered, sortMode);
+
+                // console.log(sorted);
+
+                var holder = document.getElementById("holder");
+                holder.innerHTML = "";
+
+                for (var i = 0; i < sorted.length; i++) {
+                    var pokemonText = sorted[i].id + ": " + sorted[i].name;
+
+                    var myPokemon = document.createElement("div");
+                    myPokemon.innerHTML = pokemonText;
+                    holder.appendChild(myPokemon);
+                }
+            }
+
+            update();
+
+
+        </script>
+    </body>
+</html>
