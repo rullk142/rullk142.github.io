@@ -22,19 +22,21 @@
 #tags {
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
 	font-size: 18px;
-	width: 100%;
+	width: 50%;
 	height: 200px;
-	margin: 0 auto;
+	margin: auto;
 	margin-top: 10px;
 	text-align: center;
-	position: absolute;
+	position: relative;
+	background-color: blue;
 }
 
-#words, #graffiti, #brands, #purple, #blue, #green {
+#sticker, #seeall {
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
 	font-size: 16px;
 	height: 13px;
 	padding: 5px;
+	margin: 0 auto;
 	margin-top: 20px;
 	border: 2px solid black;
 	border-radius: 5px;
@@ -43,15 +45,10 @@
 	top: 30px;
 	display: inline-block;
 	text-decoration: none;
-}
-
-a {
 	color: black;
 }
 
-#words:hover, #graffiti:hover, #brands:hover, #purple:hover, #blue:hover, #green:hover {
+#sticker:hover, #seeall:hover {
 	background-color: black;
 	color: white;
-/*	cursor: pointer;*/
-
 }

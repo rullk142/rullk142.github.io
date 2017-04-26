@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Helvetica Rounded Black";
+    src: url('fonts/HelveticaRounded-Black.ttf');
+}
+
+@font-face {
+    font-family: "Helvetica Rounded Bold";
+    src: url('fonts/HelveticaRounded-Bold.ttf');
+}
+
+img {
+	width: 198px;
+}
+
+#home {
+	height: 30px;
+	object-fit: contain;
+	object-fit: cover;
+	border: 2px solid black;
+	padding: 2px;
+	position: fixed;
+	top:0;
+	left:0;
+	float: left;
+}
+
+#sticker {
+	width: 190px;
+	height: 30px;
+	background-color: #d3d3d3;
+	border: 2px solid black;
+	padding: 2px;
+	float: left;
+	top: 35px;
+	left: 0;
+	position: fixed;
+	text-align: left;
+	line-height: 30px;
+	color: black;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+#seeall {
+	width: 190px;
+	height: 30px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 2px;
+	float: left;
+	top: 70px;
+	left: 0;
+	position: fixed;
+	text-align: left;
+	line-height: 30px;
+	color: black;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+#sticker:hover, #seeall:hover, #home:hover {
+	background-color: black;
+	color: white;
+}
