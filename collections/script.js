@@ -17,3 +17,4 @@ for (var i = found.length - 1; i >= 0; i--) {
 	first.appendChild(newsticker);
 }
 
+
