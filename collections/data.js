@@ -12,11 +12,11 @@ var stickers = [
 	{
 		"date": "4/12",
 		"title": "Treasure",
-		"surface": "Electric Pole",
+		"surface": "Streetlight",
 		"location": "Himrod St, Brooklyn, NY 11237",
 		"daynumber": 2,
-		"type": ["words","graffii"],
-		"color": ["pink", "purple", "blue","yellow","green","black"],
+		"type": [" words"," graffii"],
+		"color": [" pink", " purple", " blue"," yellow"," green"," black"],
 		"img": "img/box/treasure.jpg"
 	},
 	{
@@ -32,7 +32,7 @@ var stickers = [
 	{
 		"date": "4/14",
 		"title": "Skull",
-		"surface": "Electric Pole",
+		"surface": "Streetlight",
 		"location": "114 Wyckoff Ave, Brooklyn, NY 11237",
 		"daynumber": 4,
 		"type": "illustration",
@@ -158,5 +158,15 @@ var stickers = [
 		"type": ["brand","words"],
 		"color": ["black","white"],
 		"img": "img/box/indecline.jpg"
+	},
+	{
+		"date": "4/27",
+		"title": "Jay Riggio",
+		"surface": "Electric Box",
+		"location": "286 Stanhope St, Brooklyn, NY 11237",
+		"daynumber": 17,
+		"type": ["illustration","brand"],
+		"color": ["brown","orange","black","white"],
+		"img": "img/box/jay.jpg"
 	},
 ];
