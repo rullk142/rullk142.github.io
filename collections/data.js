@@ -169,4 +169,45 @@ var stickers = [
 		"color": ["brown","orange","black","white"],
 		"img": "img/box/jay.jpg"
 	},
+	{
+		"date": "4/28",
+		"title": "#DalitHistoryMonth",
+		"surface": "Elevator Door",
+		"location": "Parsons School of Design, 5th Avenue, New York, NY 10011",
+		"daynumber": 18,
+		"type": ["illustration","words"],
+		"color": ["pink","yellow","white"],
+		"img": "img/box/dalit.jpg"
+	},
+	{
+		"date": "4/29",
+		"title": "Not Another Font",
+		"surface": "Window",
+		"location": "245 Wilson Ave, Brooklyn, NY 11237",
+		"daynumber": 19,
+		"type": ["brand","words"],
+		"color": ["black","white"],
+		"img": "img/box/not.jpg"
+	},
+	{
+		"date": "4/30",
+		"title": "Priority Slap",
+		"surface": "Streetlight",
+		"location": "39 5th Ave, New York, NY 10003",
+		"daynumber": 20,
+		"type": ["graffiti","words"],
+		"color": ["black","white"],
+		"img": "img/box/priority.jpg"
+	},
+	{
+		"date": "5/1",
+		"title": "Eskimo",
+		"surface": "Electric Box",
+		"location": "LL / 66 5th Ave, New York, NY 10011",
+		"daynumber": 21,
+		"type": ["illustration"],
+		"color": ["black","white"],
+		"img": "img/box/eskimo.jpg"
+	},
+
 ];
