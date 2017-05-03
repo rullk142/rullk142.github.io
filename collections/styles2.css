@@ -87,10 +87,10 @@ img {
 	z-index: 5;
 }
 
+/*
 #holder {
-	top: 10px;
 	width: 70%;
-	height: 500px;
+	height: 300px;
 	margin: 0 auto;
 	background-color: pink;
 	border: 2px solid black;
@@ -102,21 +102,53 @@ img {
 	text-decoration: none;
 	padding-left: 10px;
 	z-index: 0;
+}*/
+#holder {
+	height: 100%;
+	width: 80%;
+	background-color: ivory;
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+}
+.sticker {
+	top: 10px;
+	width: 90%;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 2px;
+	position: relative;
+	line-height: 20px;
+	color: red;
+	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
+	text-decoration: none;
+	padding-left: 10px;
+	z-index: 0;
 }
 
-#left {
-	width: 30%;
-	height: 30%;
+.left {
+	position: absolute;
+	width: 20%;
+/*	height: 20%;*/
+	left: 5%;
+/*	object-fit: contain;
+	object-fit: cover;*/
+	z-index: 5;
+	background-color: orange;
+}
+
+.right {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	right: 5%;
 	background-color: yellow;
-	position: relative;
 	display: inline-block;
+	z-index: 6;
 }
 
-#right {
-	width: 65%;
-	height: 30%;
-	background-color: blue;
-	right:0;
-	position: relative;
-	display: inline-block;
-}
+
+
