@@ -15,49 +15,71 @@ img {
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: white;
 }
 #home {
-	width: 40%;
-	height: 20%;
-/*	height: 30px;*/
+	width: 300px;
+	height: 50px;
 	object-fit: contain;
 	object-fit: cover;
-	border: 2px solid black;
+/*	border: 2px solid black;*/
 	padding: 10px;
-	border-radius: 5px;
+/*	border-radius: 5px;*/
 	position: relative;
-	top:0;
+	top: 10px;
 	margin: 0 auto;
-	background-color: white;
 	z-index: 5;
 	margin-bottom: 10px;
+	pointer-events: none;
+}
+
+button.home-square {
+    position: absolute;
+    width: 350px;
+    z-index: 4;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: yellow;
+    outline: 0;
+    cursor: pointer;
+    border: 2px outset hsl(0,0%,80%);
+    top: 10px;
+}
+
+button.home-square:active {
+    border: 2px inset hsl(0,0%,80%);
 }
 
 #pages {
 	width: 80%;
-	height: 30%;
+	height: 40%;
 	margin: 0 auto;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	padding-top: 10px;
-	background-color: pink;
+	background-color: white;
+/*	border: 1px solid lightgray;
+	border-bottom: white;
+	border-top: white;*/
 	position: relative;
-	z-index: 5;
+	z-index: 3;
 	text-align: center;
 	padding-top: 10px;
-	top: 0;
-/*	display: inline-block;*/
+	top: 5px;
+	left: 10%;
+	display: inline-block;
 }
 
 #sticker {
-	width: 25%;
+	width: 150px;
 	font-size: 100%;
 /*	height: 30px;*/
 	background-color: white;
 	border: 2px solid black;
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 2px;
 	margin: 0 auto;
-/*	top: 35px;*/
+	top: 10px;
 	position: relative;
 	text-align: center;
 /*	line-height: 30px;*/
@@ -70,30 +92,50 @@ html, body {
 }
 
 #seeall {
-	width: 25%;
+	width: 150px;
 /*	height: 30px;*/
 	font-size: 100%;
 	background-color: #d3d3d3;
-	border: 2px solid black;
-	border-radius: 5px;
+	border: 2px solid gray;
+	border-radius: 10px;
 	padding: 2px;
 	margin: 0 auto;
-/*	top: 70px;*/
+	top: 10px;
 	position: relative;
 	text-align: center;
 /*	line-height: 30px;*/
-	color: black;
+	color: gray;
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
 	text-decoration: none;
 	padding: 10px;
 	z-index: 5;
 	display: inline-block;
+		pointer-events: none;
 }
 
-#sticker:hover, #seeall:hover, #home:hover {
-	background-color: black;
+#sticker:hover, #seeall:hover /*button.home-square:hover*/ {
+	background-color: #ff033e;
 	color: white;
-	z-index: 5;
+	z-index: 4;
+}
+
+#sticker:active, #seeall:active /*button.home-square:hover*/ {
+	background-color: #00FF00;
+	color: navy;
+	z-index: 4;
+}
+
+#line2 {
+	margin-top: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 3px;
+	border-radius: 10px;
+	background-color: black;
+	display: inline-block;
+	position: relative;
+	top: 10px;
 }
 
 /*---------------------*/
@@ -101,9 +143,9 @@ html, body {
 #holder {
 	height: 100%;
 	width: 80%;
-	background-color: ivory;
+	background-color: white;
 	margin: 0 auto;
-/*	margin-top: 10px;*/
+	margin-top: 10px;
 	position: relative;
 	z-index: 0;
 	overflow: hidden
@@ -115,7 +157,8 @@ html, body {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background-color: white;
-	border: 2px solid black;
+	border-radius: 10px;
+/*	border: 2px solid black;*/
 	padding: 2px;
 	position: relative;
 	line-height: 20px;
@@ -133,7 +176,7 @@ html, body {
 	z-index: 5;
 	background-color: tan;
 	display: inline-block;
-	border: 1px pink solid;
+	border: 3px outset lightgray;
 	margin-top: 10px;
 }
 
@@ -155,7 +198,7 @@ html, body {
 	height: 89%;
 	right: 5%;
 	background-color: white;
-	padding-left: 10px;
+	padding-left: 9px;
 	margin: 10px;
 	display: inline-block;
 	z-index: 6;
@@ -168,8 +211,11 @@ html, body {
 
 .line {
 	margin-top: 10px;
-	width: 100%;
-	height: 2px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 3px;
+	border-radius: 10px;
 	background-color: black;
 	display: inline-block;
 	position: relative;
@@ -180,7 +226,7 @@ html, body {
 	height: 20px;
 /*	background-color: yellow;*/
 	font-family: "Helvetica Rounded Bold";
-	right: 45%;
+	right: 40%;
 	z-index: 10;
 	position: fixed;
 	transform: rotate(-90deg);
@@ -192,23 +238,25 @@ html, body {
 
 #sort, #filter {
 	font-family: "Helvetica Rounded Bold";
-	text-align: right;
 	font-size: 16px;
-	background-color: pink;
-	width: 20%;
+	background-color: yellow;
+	width: 120px;
+	text-align-last: center;
+	line-height: 16px;
+	outline-color: #ff033e;
 }
 
 #color {
 	width: 100%;
 	height: 20px;
-/*	background-color: yellow;*/
 	font-family: "Helvetica Rounded Bold";
-	left: 45%;
+	left: 40%;
 	z-index: 10;
 	position: fixed;
 	transform: rotate(90deg);
 	text-align: center;
 	top: 50%;
 	font-size: 30px;
+	line-height: 25px;
 }
 

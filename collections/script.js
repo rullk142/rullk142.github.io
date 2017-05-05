@@ -1,14 +1,47 @@
-var found = _.where(stickers);
+var sortMode = "Name";
+var filterMode = "All";
 
-console.log(found);
+var sortSelect = document.getElementById("sort");
 
-var holder = document.getElementById("holder");
-var left = document.getElementById("left");
-var right = document.getElementById("right");
-//calls holder div from seeall.html
+sortSelect.addEventListener("change", function(e) {
+	if (sortSelect.value == "Name") {
+		sortMode = "title";
+	} else if (sortSelect.value == "Day") {
+		sortMode = "day";
+	} else if (sortSelect.value == "Date") {
+		sortMode = "date";
+	} else if (sortSelect.value == "Location") {
+		sortMode = "location";
+	} else if (sortSelect.value =="Surface") {
+		sortMode = "surface";
+	}
+	update();
+});
 
-stickers.forEach(function(item) {
-	console.log(item);
+var filterSelect = document.getElementById("filter");
+
+filterSelect.addEventListener("change", function(e) {
+	filterMode = filterSelect.value
+	update();
+});
+
+// var found = _.where(stickers);
+// console.log(found);
+
+function update() {
+	console.log(sortMode, filterMode);
+	var filtered = _.filter(stickers, function(s) {
+		return s.type.includes(filterMode);
+	});
+
+	var sorted = _.sortBy(filtered, sortMode);
+
+	var holder = document.getElementById("holder");
+	var left = document.getElementById("left");
+	var right = document.getElementById("right");
+	//calls holder div from seeall.html
+
+	stickers.forEach(function(item) {
 	var itembox = document.createElement("div");
 		itembox.classList.add("sticker");
 
@@ -50,8 +83,11 @@ stickers.forEach(function(item) {
 		var tags = document.createElement("p");
 			tags.textContent = "Tags: " + item.type + ", " + item.color;
 			right.appendChild(tags);
-	// adds all sticker info to holder div
-});
+		// adds all sticker info to holder div
+	});
+}
+
+update();
 
 
 

@@ -9,7 +9,7 @@ h1, h2, h3 {
 
 #page {
 	font-family: "Helvetica", "sans-serif";
-	font-size: 16px;
+	font-size: 24px;
 	width: 50%;
 	height: 100%;
 	color: black;
@@ -27,7 +27,7 @@ p {
 
 #talk {
 	text-align: left;
-	font-size: 16px;
+	font-size: 24px;
 	font-weight: normal;
 	padding-left: 50px;
 	padding-right: 15%;
