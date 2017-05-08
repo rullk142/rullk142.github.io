@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "BrownReg";
+    src: url('fonts/Brown-Regular.otf');
+}
+
+@font-face {
+    font-family: "BrownBold";
+    src: url('fonts/Brown-Bold.otf');
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -8,16 +18,18 @@ h1, h2, h3 {
 }
 
 #page {
-	font-family: "Helvetica", "sans-serif";
+	font-family: "BrownReg", "sans-serif";
 	font-size: 24px;
 	width: 50%;
 	height: 100%;
 	color: black;
-	background-color: ivory;
+	background-color: white;
 	margin: 0 auto;
 	top: 0;
 	text-align: left;
 	padding: 5%;
+	z-index: 100;
+	line-height: 26px;
 }
 
 p {
@@ -32,22 +44,7 @@ p {
 	padding-left: 50px;
 	padding-right: 15%;
 }
-/*
-#talk2 {
-	text-align: left;
-	font-size: 16px;
-	font-weight: normal;
-	padding-left: 100px;
-	padding-right: 15%;
-	display: inline-block;
-	position: relative;
-}*/
-/*
-#talk3 {
-	text-align: left;
-	font-size: 19px;
-	font-weight: bold;
-	padding-left: 50px;
-	padding-right: 15%;
-	line-height: 0;
-}*/
+
+b {
+	font-family: "BrownBold", "sans-serif";
+}
