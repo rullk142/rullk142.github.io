@@ -209,5 +209,95 @@ var stickers = [
 		"color": ["black","white"],
 		"img": "img/box/eskimo.jpg"
 	},
+	{
+		"date": "5/2",
+		"title": "Aware",
+		"surface": "My Fridge",
+		"location": "My Apartment",
+		"daynumber": 22,
+		"type": ["words", "graffiti"],
+		"color": ["black","white"],
+		"img": "img/box/aware.jpg"
+	},
+	{
+		"date": "5/3",
+		"title": "Eyes",
+		"surface": "My Shelf",
+		"location": "My Apartment",
+		"daynumber": 23,
+		"type": ["photography"],
+		"color": ["black","blue", "pink"],
+		"img": "img/box/eyes.jpg"
+	},
+	{
+		"date": "5/4",
+		"title": "Froze",
+		"surface": "My Shelf",
+		"location": "My Apartment",
+		"daynumber": 24,
+		"type": ["illustration", "words"],
+		"color": ["yellow","blue", "pink"],
+		"img": "img/box/froze.jpg"
+	},
+	{
+		"date": "5/5",
+		"title": "Lady",
+		"surface": "My Fridge",
+		"location": "My Apartment",
+		"daynumber": 25,
+		"type": ["photography"],
+		"color": ["black","brown"],
+		"img": "img/box/lady.jpg"
+	},
+	{
+		"date": "5/6",
+		"title": "Magic",
+		"surface": "My Shelf",
+		"location": "My Apartment",
+		"daynumber": 26,
+		"type": ["words", "graffiti"],
+		"color": ["black","white"],
+		"img": "img/box/magic.jpg"
+	},
+	{
+		"date": "5/7",
+		"title": "Narwhal",
+		"surface": "My Fridge",
+		"location": "My Apartment",
+		"daynumber": 27,
+		"type": ["illustration", "brand", "words"],
+		"color": ["green","white"],
+		"img": "img/box/narwhal.jpg"
+	},
+	{
+		"date": "5/8",
+		"title": "Smiley",
+		"surface": "My Shelf",
+		"location": "My Apartment",
+		"daynumber": 28,
+		"type": ["illustration", "brand", "words"],
+		"color": ["green","black", "blue","purple","pink","yellow"],
+		"img": "img/box/smiley.jpg"
+	},
+	{
+		"date": "5/9",
+		"title": "Spade",
+		"surface": "My Shelf",
+		"location": "My Apartment",
+		"daynumber": 29,
+		"type": ["graffiti", "words"],
+		"color": ["green", "blue","purple","pink","red","gray"],
+		"img": "img/box/spade.jpg"
+	},
+	{
+		"date": "5/10",
+		"title": "Sunshine",
+		"surface": "My Fridge",
+		"location": "My Apartment",
+		"daynumber": 30,
+		"type": ["Brand", "words"],
+		"color": ["blue","purple","pink"],
+		"img": "img/box/sunshine.jpg"
+	},
 
 ];
