@@ -37,6 +37,7 @@ function update() {
 	var sorted = _.sortBy(filtered, sortMode);
 
 	var holder = document.getElementById("holder");
+	holder.innerHTML = "";
 	var left = document.getElementById("left");
 	var right = document.getElementById("right");
 	//calls holder div from seeall.html
@@ -81,7 +82,11 @@ function update() {
 			surface.textContent = "Surface: " + item.surface;
 			right.appendChild(surface);
 		var tags = document.createElement("p");
-			tags.textContent = "Tags: " + item.type + ", " + item.color;
+			var typeString = Array.prototype.join.call(item.type, ", ");
+			var colorString = Array.prototype.join.call(item.color, ", ");
+			console.log(typeString);
+			console.log(colorString);
+			tags.textContent = "Tags: " + typeString + ", " + colorString;
 			right.appendChild(tags);
 		// adds all sticker info to holder div
 	});

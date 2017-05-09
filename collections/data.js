@@ -5,7 +5,7 @@ var stickers = [
 		"surface": "My Fridge",
 		"location": "My Apartment",
 		"daynumber": 1,
-		"type": "words",
+		"type": ["words"],
 		"color": ["pink", "purple", "blue"],
 		"img": "img/box/dazed.jpg"
 	},
@@ -15,8 +15,8 @@ var stickers = [
 		"surface": "Streetlight",
 		"location": "Himrod St, Brooklyn, NY 11237",
 		"daynumber": 2,
-		"type": [" words"," graffii"],
-		"color": [" pink", " purple", " blue"," yellow"," green"," black"],
+		"type": ["words","graffii"],
+		"color": ["pink", "purple", "blue","yellow","green","black"],
 		"img": "img/box/treasure.jpg"
 	},
 	{
@@ -35,7 +35,7 @@ var stickers = [
 		"surface": "Streetlight",
 		"location": "114 Wyckoff Ave, Brooklyn, NY 11237",
 		"daynumber": 4,
-		"type": "illustration",
+		"type": ["illustration"],
 		"color": ["white","black"],
 		"img": "img/box/skull.jpg"
 	},
@@ -45,7 +45,7 @@ var stickers = [
 		"surface": "Glass Wall",
 		"location": "LL / 66 5th Ave, New York, NY 10011",
 		"daynumber": 5,
-		"type": "words",
+		"type": ["words"],
 		"color": ["white","pink"],
 		"img": "img/box/feminist.jpg"
 	},
@@ -55,7 +55,7 @@ var stickers = [
 		"surface": "Train Sign",
 		"location": "14 Street / 6 Av, New York, NY 10011",
 		"daynumber": 6,
-		"type": "words",
+		"type": ["words"],
 		"color": ["blue","green"],
 		"img": "img/box/dm.jpg"
 	},
@@ -75,7 +75,7 @@ var stickers = [
 		"surface": "Subway Pillar",
 		"location": "14 Street / 6 Av, New York, NY 10011",
 		"daynumber": 8,
-		"type": "words",
+		"type": ["words"],
 		"color": ["black","white"],
 		"img": "img/box/wang.jpg"
 	},
@@ -85,7 +85,7 @@ var stickers = [
 		"surface": "Subway Pillar",
 		"location": "Myrtle Av, Brooklyn, NY 11206",
 		"daynumber": 9,
-		"type": "words",
+		"type": ["words"],
 		"color": ["black","white"],
 		"img": "img/box/s.jpg"
 	},
@@ -105,7 +105,7 @@ var stickers = [
 		"surface": "Locker",
 		"location": "10th Floor / 66 5th Ave, New York, NY 10011",
 		"daynumber": 11,
-		"type": "illustration",
+		"type": ["illustration"],
 		"color": ["green","red","yellow"],
 		"img": "img/box/wolf.jpg"
 	},
