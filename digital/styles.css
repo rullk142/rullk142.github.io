@@ -64,12 +64,13 @@ h3 {
 	margin: 0 auto;
 	top: 0;
 	text-align: left;
-	padding: 15%;
+	padding: 10%;
 	z-index: 100;
 	line-height: 26px;
 /*	padding-top: 1000px;*/
 	opacity: 1;
 	position: relative;
+
 }
 
 #page2 {
@@ -90,6 +91,7 @@ h3 {
     padding-top: 10px;
     opacity: 1;
     position: relative;
+    bottom: 0;
 }
 
 p {
