@@ -1,6 +1,19 @@
-function ScrollToBottom() {
-	$('#fading').animate({scrollTop: $('#fading').get(0).scrollHeight}, 1000);
-};
+// function Scrolldown() {
+//      window.scroll(0,300); 
+//      console.log("Scrolling?");
+// }
+
+
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#fadeOut').offset().top
+    }, 35000);
+    $('html, body').animate({
+        scrollTop: $('html').prop("scrollHeight")
+    }, 25000);
+});
 
 var target = $('#fading');
 var targetHeight = target.outerHeight();
@@ -10,17 +23,15 @@ $(document).scroll(function(e){
 	console.log(window);
     var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
     if(scrollPercent >= 0.0){
-    	// var newTarget = target.not($('#page'));
-    	console.log(target.not($('#page')));
         target.css('opacity', (1.2 - scrollPercent));
     }
-    ScrollToBottom();
     // if (window.scrollY <= 220000) {
     // 	target.css('opacity', ((1 + scrollPercent)*.3));
     // }
 });
 
 var target2 = $('#fadeOut');
+
 var target2Height = (targetHeight - target2.outerHeight());
 
 $(document).scroll(function(e){
@@ -28,9 +39,12 @@ $(document).scroll(function(e){
     if(scrollPercent >= 0){
         target2.css('opacity', scrollPercent);
     }
-    if(window.scrollY == 247977) {
-		target2.fadeTo(9000, 0.2, function() {
+});
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       target2.fadeTo(9000, 0.2, function() {
 		});
-    }
+   }
 });
 
