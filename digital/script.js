@@ -1,19 +1,12 @@
-// function Scrolldown() {
-//      window.scroll(0,300); 
-//      console.log("Scrolling?");
-// }
-
-
-
-// $(document).ready(function () {
-//     // Handler for .ready() called.
-//     $('html, body').animate({
-//         scrollTop: $('#fadeOut').offset().top
-//     }, 35000);
-//     $('html, body').animate({
-//         scrollTop: $('html').prop("scrollHeight")
-//     }, 25000);
-// });
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#fadeOut').offset().top
+    }, 35000);
+    $('html, body').animate({
+        scrollTop: $('html').prop("scrollHeight")
+    }, 25000);
+});
 
 var target = $('#fading');
 var targetHeight = target.outerHeight();
