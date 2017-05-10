@@ -16,7 +16,7 @@ var stickers = [
 		"surface": "Streetlight",
 		"location": "Himrod St, Brooklyn, NY 11237",
 		"daynumber": 2,
-		"type": ["words","graffii"],
+		"type": ["words","graffiti"],
 		"color": ["pink", "purple", "blue","yellow","green","black"],
 		"img": "img/box/treasure.jpg",
 		"png": "img/png/treasure.png"
@@ -324,7 +324,7 @@ var stickers = [
 		"surface": "My Fridge",
 		"location": "My Apartment",
 		"daynumber": 30,
-		"type": ["Brand", "words"],
+		"type": ["brand", "words"],
 		"color": ["blue","purple","pink"],
 		"img": "img/box/sunshine.jpg",
 		"png": "img/png/sunshine.png"

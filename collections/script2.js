@@ -4,25 +4,50 @@ console.log("hello");
 
 var holder = document.getElementById("holder");
 
-$(window).click(function(e) {
-	stickers.forEach(function(item) {
-		console.log(e);
-		console.log(e.screenX);
-		var positionX = e.screenX;
-		var positionY = e.screenY;
-		var sticker = document.createElement("div");
-		holder.appendChild(sticker);
+var counter = 0;
 
+$('#bg, #holder').click(function(e) {
+	console.log(e);
+	
+	item = stickers[counter % stickers.length];
+		
+		console.log(e.screenX);
+		var positionX = e.screenX - 150;
+		var positionY = e.screenY - 200;
+
+		var sticker = document.createElement("div");
+		sticker.classList.add("sticker");
+		holder.appendChild(sticker);
+		console.log(stickers);
 		var png = document.createElement("img");
 		png.src = item.png;
+		sticker.style.cssText = "left: " + positionX + "px; top: " + positionY + "px;";
 		sticker.appendChild(png);
-	});
+		var image = $(sticker).children("img");
+		console.log(image);
+
+	counter += 1;
+	console.log(counter);
+	console.log(item);
 });
 
-var page = $(window);
+// ---------------------------------------------------------
 
-$("#sticker").click(function(page) {
+
+var page = document.getElementById("holder");
+
+$("#clear").mouseup(function(e) {
 	// var page = $(window).currentTarget.holder;
-	console.log(page);
-	// removeChild(children);
+	// console.log(page);
+	while (page.hasChildNodes()) {
+		page.removeChild(page.firstChild);
+	}
 });
+
+$("#undo").mouseup(function(e) {
+	if (page.hasChildNodes()) {
+    	page.removeChild(page.lastElementChild);
+	}
+})
+
+

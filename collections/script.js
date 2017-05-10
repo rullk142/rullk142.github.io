@@ -1,40 +1,64 @@
-var sortMode = "Name";
+var sortMode = "title";
 var filterMode = "All";
 
-var sortSelect = document.getElementById("sort");
+var sortSelect = document.querySelector("#noun #sort");
 
 sortSelect.addEventListener("change", function(e) {
+		console.log(sortSelect.value);
 	if (sortSelect.value == "Name") {
 		sortMode = "title";
 	} else if (sortSelect.value == "Day") {
-		sortMode = "day";
+		sortMode = "daynumber";
 	} else if (sortSelect.value == "Date") {
 		sortMode = "date";
 	} else if (sortSelect.value == "Location") {
 		sortMode = "location";
-	} else if (sortSelect.value =="Surface") {
+	} else if (sortSelect.value == "Surface")
 		sortMode = "surface";
-	}
+		console.log(sortMode);
 	update();
+	// console.log(sortSelect.value);
 });
 
 var filterSelect = document.getElementById("filter");
 
 filterSelect.addEventListener("change", function(e) {
-	filterMode = filterSelect.value
+	filterMode = filterSelect.value;
+	console.log(filterMode);
 	update();
 });
 
-// var found = _.where(stickers);
-// console.log(found);
-
 function update() {
+	var types = _.uniq(_.flatten(_(stickers).pluck("type")));
+		// console.log(types);
+
 	console.log(sortMode, filterMode);
-	var filtered = _.filter(stickers, function(s) {
-		return s.type.includes(filterMode);
-	});
+	
+	if (filterMode == "All") {
+		filtered = stickers;
+	}
+
+	else {
+		filterMode = filterMode.toLowerCase();
+		console.log("filtering by: " + filterMode);
+
+		if (_(types).contains(filterMode)) {
+			var filtered = _.filter(stickers, function(s) {
+				return s.type.includes(filterMode);
+			});
+		}
+		else {
+			var filtered = _.filter(stickers, function(s) {
+				return s.color.includes(filterMode);
+			});	
+		}
+		
+	}
+	
+	// console.log(filtered);
 
 	var sorted = _.sortBy(filtered, sortMode);
+	// console.log(sorted);
 
 	var holder = document.getElementById("holder");
 	holder.innerHTML = "";
@@ -42,7 +66,7 @@ function update() {
 	var right = document.getElementById("right");
 	//calls holder div from seeall.html
 
-	stickers.forEach(function(item) {
+	sorted.forEach(function(item) {
 	var itembox = document.createElement("div");
 		itembox.classList.add("sticker");
 
@@ -84,15 +108,17 @@ function update() {
 		var tags = document.createElement("p");
 			var typeString = Array.prototype.join.call(item.type, ", ");
 			var colorString = Array.prototype.join.call(item.color, ", ");
-			console.log(typeString);
-			console.log(colorString);
+			// console.log(typeString);
+			// console.log(colorString);
 			tags.textContent = "Tags: " + typeString + ", " + colorString;
 			right.appendChild(tags);
 		// adds all sticker info to holder div
 	});
 }
 
-update();
+window.addEventListener("load", function() {
+	update();
+})
 
 
 

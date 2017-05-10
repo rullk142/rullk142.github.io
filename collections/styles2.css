@@ -9,7 +9,7 @@
 }
 
 img {
-	width: 200px;
+	width: 100%;
 }
 
 html, body {
@@ -177,21 +177,36 @@ a {
 	object-fit: cover;*/
 	z-index: 5;
 	background-color: tan;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
 	border: 3px outset lightgray;
 	margin-top: 10px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
 }
 
+/*img.not(#logo) {
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}*/
+
 .left img {
-	width: 100%;
-	height: 100%;
+	min-width: 310px;
+	background-image: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	margin: auto;
 /*	background-size: contain;*/
 	bottom: 0;
 	position: relative;
-	overflow: hidden;
+	vertical-align: middle;
 	display: inline-block;
+/*	right: 20px;
+	bottom: 20px;*/
 }
 
 .right {
@@ -223,7 +238,7 @@ a {
 	position: relative;
 }
 
-#type {
+#noun {
 	width: 100%;
 	height: 20px;
 /*	background-color: yellow;*/
@@ -248,7 +263,7 @@ a {
 	outline-color: #ff033e;
 }
 
-#color {
+#adj {
 	width: 100%;
 	height: 20px;
 	font-family: "Helvetica Rounded Bold";
