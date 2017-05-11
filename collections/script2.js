@@ -48,6 +48,7 @@ $("#clear").mouseup(function(e) {
 $("#undo").mouseup(function(e) {
 	if (page.hasChildNodes()) {
     	page.removeChild(page.lastElementChild);
+    	counter -= 1;
 	}
 })
 
