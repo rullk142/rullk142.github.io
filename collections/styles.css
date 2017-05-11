@@ -34,7 +34,8 @@
 #sticker, #seeall {
 	font-family: "Helvetica Rounded Bold", "Helvetica", sans-serif;
 	font-size: 16px;
-	height: 13px;
+	height: 15%;
+	line-height: 33px;
 	padding: 5px;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -49,6 +50,11 @@
 }
 
 #sticker:hover, #seeall:hover {
-	background-color: black;
+	background-color: #ff033e;
 	color: white;
+}
+
+#sticker:active, #seeall:active {
+	background-color: #00FF00;
+	color: navy;
 }

@@ -3,17 +3,18 @@ console.log("hello");
 // var target = $(window);
 
 var holder = document.getElementById("holder");
+var bg = document.getElementById("bg");
 
 var counter = 0;
 
 $('#bg, #holder').click(function(e) {
 	console.log(e);
-	
+	bg.innerHTML = "";
 	item = stickers[counter % stickers.length];
 		
 		console.log(e.screenX);
 		var positionX = e.screenX - 150;
-		var positionY = e.screenY - 200;
+		var positionY = e.screenY - 230;
 
 		var sticker = document.createElement("div");
 		sticker.classList.add("sticker");
