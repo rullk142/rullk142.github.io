@@ -14,7 +14,7 @@ $('#bg, #holder').click(function(e) {
 		
 		console.log(e.screenX);
 		var positionX = e.screenX - 150;
-		var positionY = e.screenY - 230;
+		var positionY = e.screenY - 160;
 
 		var sticker = document.createElement("div");
 		sticker.classList.add("sticker");
