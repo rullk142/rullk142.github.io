@@ -302,7 +302,7 @@ var stickers = [
 		"surface": "My Shelf",
 		"location": "My Apartment",
 		"daynumber": 28,
-		"type": ["illustration", "brand", "words"],
+		"type": ["brand", "words"],
 		"color": ["green","black", "blue","purple","pink","yellow"],
 		"img": "img/box/smiley.jpg",
 		"png": "img/png/smiley.png"
