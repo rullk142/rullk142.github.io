@@ -16,7 +16,7 @@ h1, h2 {
 a {
 	font-family: "Helvetica", sans-serif;
 	color: gray;
-	padding-left: 40px;
+	margin-left: 40px;
 /*	text-indent: 30px;*/
 	font-size: 16px;
 	line-height: 16px;
@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-	color: red;
+	color: white;
 }
 
 #header {

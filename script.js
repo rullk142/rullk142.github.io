@@ -90,7 +90,7 @@ $("#stick, #collect").on({
 	}
 });
 
-$("#ui, #ux").on({
+$("#ui, #one").on({
 	"mouseover" : function() {
 		ui.src = "thumb/color/ui.jpg";
 		console.log("mouse over!");
@@ -136,11 +136,11 @@ $("#wild, #things").on({
 
 $("#wire, #frame").on({
 	"mouseover" : function() {
-		wild.src = "thumb/color/wire.jpg";
+		wire.src = "thumb/color/wire.jpg";
 		console.log("mouse over!");
 	},
 	"mouseout" : function() {
-		wild.src = "thumb/bw/wire.jpg";
+		wire.src = "thumb/bw/wire.jpg";
 		console.log("mouse out!");
 	}
 });
