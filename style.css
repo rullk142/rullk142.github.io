@@ -40,6 +40,10 @@ p:hover {
 	color: white;
 }
 
+p:active {
+	color: pink;
+}
+
 #header {
 	background-color: black;
 	width: 100%;
